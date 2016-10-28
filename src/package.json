@@ -1,0 +1,37 @@
+{
+  "name": "commons-app-web",
+  "version": "1.0.0",
+  "description": "Website for the Wikimedia Commons App",
+  "main": "dist/scripts.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "es6-module-transpiler": "^0.10.0",
+    "event-stream": "^3.3.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "config": {
+    "path": {
+      "jsDev": "./main_site/static/js-dev",
+      "js": "./main_site/static/js",
+      "cssDev": "./main_site/static/css-dev",
+      "css": "./main_site/static/css"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+{% load i18n %}
+{% load static %}
+
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Commons App</title>
+
+    {% for lang in lang_list %}
+      <link rel="alternate" href="{{ request.get_host }}/{{ lang }}" hreflang="{{ lang }}" />
+    {% endfor %}
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    {% include 'main_site/navigation.dtl' %}
+    {% block content %}
+    {% endblock %}
+
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/modernizr-custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

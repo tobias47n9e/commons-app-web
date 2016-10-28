@@ -1,0 +1,170 @@
+{% extends 'main_site/base.dtl' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+
+<header class="section intro-section">
+  <div class="header-div">
+    <h1 class="page-header">{% trans 'Commons Mobile App' %}</h1>
+  </div>
+  <div class="badge-div">
+    <a class="badge-link" href="https://f-droid.org/repository/browse/?fdid=fr.free.nrw.commons">
+      <img class="image" src="{% static 'images/f-droid-badge.png' %}" alt="F-Droid Logo"/>
+    </a>
+    <a class="badge-link" href="https://play.google.com/store/apps/details?id=fr.free.nrw.commons">
+      <img class="image" src="{% static 'images/google-play-badge.png' %}" alt="Google Play Store badge"/>
+    </a>
+  </div>
+</header>
+<section class="section description-section anchor-offset" id="description">
+  <div class="inner">
+    <h2 class="section-header">The App</h2>
+    <p>
+      The Commons Mobile App is a community maintained app that makes it
+      easy to upload your pictures to Wikimedia Commons. The app can be
+      installed on any Android device and uses your Commons user account
+      to upload photos.
+    </p>
+    <div class="button-div">
+      <a class="button" href="https://play.google.com/store/apps/details?id=fr.free.nrw.commons">Google Play page</a>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<section class="section anchor-offset" id="community">
+  <div class="inner">
+      <h2 class="section-header">The Community</h2>
+    	<p>
+    	  Join one of the largest photo and multimedia communities in the World.
+    	  Commons is not only the image repository for Wikipedia, but an independent
+    	  project that seeks to document the world with photos, videos and
+    	  recordings.
+    	</p>
+    	<p>
+    	  The community organizes many annual events and contests, such as
+    	  Wiki Loves Monuments and Wiki Loves Earth. By using the app you
+    	  can easily take pictures when you come across a landmark that
+    	  might be missing a picture, requires a different angle, or has
+    	  not been photographed for a while.
+    	</p>
+    	<div class="button-div">
+    	  <a class="button" href="https://commons.wikimedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page">Join Commons</a>
+    	</div>
+  </div>
+</section>
+<section class="feature-section anchor-offset grey-section" id="features">
+  <div class="inner">
+    <h2 class="section-header">Features</h2>
+    <div class="item-container">
+      <section class="item">
+        <div class="item-image">
+          <img class="image" src="{% static 'images/screen-upload.png' %}"
+            alt="Screenshot of upload feature"/>
+        </div>
+        <div class="hover-bar"></div>
+        <h3 class="item-header">Upload your files anywhere</h3>
+        <p class="item-text">
+          You can upload your pictures anywhere you have time. For
+          example during the bus ride home from a photo trip.
+        </p>
+      </section>
+      <section class="item">
+        <div class="item-image">
+          <img class="image" src="{% static 'images/screen-gallery.png' %}"
+            alt="Screenshot of gallery feature"/>
+        </div>
+        <div class="hover-bar"></div>
+        <h3 class="item-header">View your uploads</h3>
+        <p class="item-text">
+          The app shows all the uploads you made to Commons. This is
+          a great way to easily view your contributions.
+        </p>
+      </section>
+      <section class="item">
+        <div class="item-image">
+          <img class="image" src="{% static 'images/screen-nearby.png' %}"
+            alt="Screenshot of nearby missing image feature"/>
+        </div>
+        <div class="hover-bar"></div>
+        <h3 class="item-header">View nearby missing images</h3>
+        <p class="item-text">
+          The app lets you view nearby missing images. This way
+          you help out Wikipedia to have images for all articles,
+          and you will discover beautiful places close to you.
+        </p>
+      </section>
+      <section class="item">
+        <div class="item-image">
+          <img class="image" src="{% static 'images/screen-categories.png' %}"
+            alt="Screenshot of categories feature"/>
+        </div>
+        <div class="hover-bar"></div>
+        <h3 class="item-header">Categorize your photos</h3>
+        <p class="item-text">
+          You can assign categories to your photos, which makes
+          them easier to find for other people.
+        </p>
+      </section>
+    </div>
+  </div>
+</section>
+<section class="section anchor-offset" id="usage">
+<div class="inner">
+  <h2 class="section-header">Installation & Usage</h2>
+  <p>Installing and using the app is easy:</p>
+  <ol class="large-count">
+    <li>Download Wikimedia Commons from the <a href="https://play.google.com/store/apps/details?id=fr.free.nrw.commons">Google Play Store</a></li>
+    <li>Take a picture of something interesting</li>
+    <li>In your camera app, click to view the picture you just took</li>
+    <li>Press "Share"</li>
+    <li>Select Commons</li>
+    <li>The first time you will need to log in (if you don't have an account, create one for free here)</li>
+    <li>Enter a name and description for the picture</li>
+    <li>Enter as many relevant categories as possible</li>
+    <li>Press Save</li>
+  </ol>
+</div>
+</section>
+<div class="section-divider"></div>
+<section class="section anchor-offset" id="photo-guide">
+  <div class="inner">
+<h2 class="section-header">Photo Guideline</h2>
+    	<p>
+        The following guidelines will help you to understand what
+    	  photos the community is looking for. There is flexibility
+    	  in these guidelines and they don't cover all cases. If you
+    	  are unsure, just upload your photo and discuss it with the
+    	  community.
+    	</p>
+    	<ul class="guide-list">
+    	  <li class="plus">Photos that document the world around you</li>
+    	  <li class="minus">
+    	    Photos of you or your friends. But if you are documenting an
+    	    event it doesn't matter if they are in the picture.
+    	  </li>
+    	  <li class="plus">
+    	    Photos of notable objects that you find in the
+    	    <strong>Nearby List</strong> in the app.
+    	  </li>
+    	  <li class="minus">
+    	    Photos of poor quality. Make sure the things you are
+    	    trying to document are visible on the picture.
+    	  </li>
+    	</ul>
+  </div>
+</section>
+<footer class="footer-section">
+  <div class="name-div">
+    Commons Mobile App
+  </div>
+  <div class="info-div">
+    <ul class="info-list">
+      <li><a href="https://github.com/commons-app/apps-android-commons">Source Code</a></li>
+      <li><a href="https://github.com/commons-app/apps-android-commons/issues">Report an Issue</a></li>
+    </ul>
+  </div>
+</footer>
+
+{% endblock %}
